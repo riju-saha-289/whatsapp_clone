@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+@media (max-width: 300px) {
+  .message-input-form input {
+    padding: 0.25rem 0.5rem; /* px-2 py-1 */
+    font-size: 0.875rem; /* text-sm */
+  }
+  .message-input-form button {
+    padding: 0.25rem 0.75rem; /* smaller button padding */
+    font-size: 0.875rem; /* text-sm */
+  }
+}
+
+/* Hide scrollbars but keep scroll functionality */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
