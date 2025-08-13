@@ -16,8 +16,7 @@ export const MessageProvider = ({ children }) => {
   const [errorChatList, setErrorChatList] = useState(null);
 
   // Base URL for your backend API
-  const API_BASE =
-    import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+  const API_BASE ="https://whatsapp-clone-1-dcm3.onrender.com/api";
 
   // Fetch chat list summaries
   const fetchChatList = async () => {
